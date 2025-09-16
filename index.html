@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R-DESCUBRE-T</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#D9CEF1">
+    
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/logo.svg">
+
+    <!-- SEO & Social Sharing Meta Tags -->
+    <meta name="description" content="Aplicación del método 'Es muy tú' por Yolanda Fernández. Un espacio de autodescubrimiento y bienestar para mujeres, con diario de gratitud, registro de síntomas y recursos de apoyo.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://TU_DOMINIO_AQUI.com/">
+    <meta property="og:title" content="R-DESCUBRE-T: Método 'Es muy tú'">
+    <meta property="og:description" content="Tu compañero en el viaje de autodescubrimiento y bienestar durante la menopausia.">
+    <meta property="og:image" content="https://TU_DOMINIO_AQUI.com/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://TU_DOMINIO_AQUI.com/">
+    <meta property="twitter:title" content="R-DESCUBRE-T: Método 'Es muy tú'">
+    <meta property="twitter:description" content="Tu compañero en el viaje de autodescubrimiento y bienestar durante la menopausia.">
+    <meta property="twitter:image" content="https://TU_DOMINIO_AQUI.com/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'app-bg': '#F5F5E3',
+              'card-bg': '#D9CEF1',
+              'primary-text': '#49246E',
+              'secondary-text': '#6E4990',
+              'accent': '#8834C7',
+              'accent-hover': '#712bA5',
+              'input-bg': '#6E4990',
+              'input-text': '#F5F5E3',
+              'input-placeholder': '#B2A5CB',
+              'border-color': '#C5B9DE',
+              'danger': '#E53E3E',
+              'danger-hover': '#C53030',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        max-height: 350px;
+      }
+      @media (min-width: 768px) {
+          .chart-container {
+              height: 350px;
+              max-height: 400px;
+          }
+      }
+      .icon-text {
+          font-size: 2.5rem;
+          line-height: 1;
+      }
+      .aspect-video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+      }
+      .aspect-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+</head>
+  <body class="bg-app-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
