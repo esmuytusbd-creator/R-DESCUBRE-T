@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="256" cy="256" r="256" fill="#D9CEF1"/>
+  <g transform="translate(0, 20)">
+    <path d="M 256.00,210 C 158.50,214.5 158.50,345 256.00,343.5 C 319.00,343.5 319.00,283.5 256.00,283.5 C 193.00,283.5 193.00,343.5 256.00,343.5" stroke="black" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="130" y="240" font-family="Inter, sans-serif" font-size="90" font-weight="700" fill="black" text-anchor="middle">Y</text>
+    <text x="256" y="410" font-family="Inter, sans-serif" font-size="50" font-weight="700" fill="black" text-anchor="middle">ES MUY TÚ</text>
+  </g>
+</svg>
